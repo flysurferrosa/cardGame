@@ -56,10 +56,10 @@
 
   deal(d, p1, p2);
   var cardFromP1, cardFromP2;
-   //play the game...while player 1 and player 2 both still have cards, each player takes out the top card from their stack and plays it.  If the card played has the same number as the card laying down in the middle (top of the pile) then the player who played it takes that card and all the middle cards and adds them to his/her hand.  
+   //play the game...while player 1 and player 2 both still have cards, each player takes out the top card from their stack and plays it.  If the card played has the same number as the card laying down in the middle (top of the pile) then player who played the matching card takes all of the cards in the middle.  This player puts all those cards into another pile, the points pile.  When one player runs out of cards the game is over and whoever has more cards in the points pile wins the game.  
   cardFromP1 = p1.cards.pop();
   pile.cards.push(cardFromP1);
-  //while
+  
   while (p1.cards.length != 0 && p2.cards.length != 0) {
 
     cardFromP2 = p2.cards.pop();
